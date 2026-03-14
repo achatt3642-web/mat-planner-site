@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Download hub for the MAT Planner desktop application." />
+  <title>MAT Planner | Desktop Download Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="eyebrow">mat-planner.org</p>
+    <h1>MAT Planner Desktop Download Hub</h1>
+    <p class="subtitle">
+      This site is dedicated to one job: helping you download the latest MAT Planner desktop build for your platform.
+    </p>
+
+    <div class="status-row">
+      <div class="status-pill">
+        <span class="dot"></span>
+        <span id="releaseStatus">Checking latest release...</span>
+      </div>
+      <a class="text-link" href="https://github.com/achatt3642-web/mat-planner-site/releases" target="_blank" rel="noopener noreferrer">
+        View all releases
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="downloads" aria-labelledby="download-title">
+      <h2 id="download-title">Download</h2>
+      <p class="section-copy">Choose your operating system. If a direct installer is not available, use the full release page link.</p>
+
+      <div class="card-grid">
+        <article class="download-card">
+          <h3>macOS</h3>
+          <p>Universal installer package for Apple Silicon and Intel Macs.</p>
+          <a id="macDownload" class="btn" href="https://github.com/achatt3642-web/mat-planner-site/releases" target="_blank" rel="noopener noreferrer">
+            Download for macOS
+          </a>
+          <p class="small" id="macMeta">Waiting for release metadata...</p>
+        </article>
+
+        <article class="download-card">
+          <h3>Windows</h3>
+          <p>Windows desktop installer for x64 systems.</p>
+          <a id="windowsDownload" class="btn" href="https://github.com/achatt3642-web/mat-planner-site/releases" target="_blank" rel="noopener noreferrer">
+            Download for Windows
+          </a>
+          <p class="small" id="windowsMeta">Waiting for release metadata...</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase" aria-labelledby="preview-title">
+      <div>
+        <h2 id="preview-title">Preview</h2>
+        <p class="section-copy">
+          MAT Planner supports measured morphology review and planning workflows in a desktop-first interface.
+        </p>
+      </div>
+      <div class="shot-grid">
+        <figure>
+          <img src="assets/images/medial-morphology.png" alt="MAT Planner measured morphology cards for medial scaffold" loading="lazy" />
+          <figcaption>Medial scaffold morphology panel</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/lateral-morphology.png" alt="MAT Planner measured morphology cards for lateral scaffold" loading="lazy" />
+          <figcaption>Lateral scaffold morphology panel</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="notes" aria-labelledby="notes-title">
+      <h2 id="notes-title">Install Notes</h2>
+      <ul>
+        <li>Use the latest release for the most current app and model compatibility.</li>
+        <li>If your browser blocks downloads, open the full release page and download manually.</li>
+        <li>For clinical use decisions, rely on validated workflows and institutional review standards.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p id="lastUpdated">Last updated: checking...</p>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
