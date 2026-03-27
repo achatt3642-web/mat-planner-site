@@ -38,6 +38,12 @@
     });
   }
 
+  document.querySelectorAll("a.download-stub").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  });
+
   document.querySelectorAll(".copy-btn[data-copy-target]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var id = btn.getAttribute("data-copy-target");
