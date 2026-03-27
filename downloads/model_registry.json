@@ -1,0 +1,658 @@
+{
+  "app_root": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner",
+  "application_files": [
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/pyproject.toml",
+      "sha256": "1c9ae8182032683d1fa75231735b5bb03900999149df7245ec9028d25a5f9dad",
+      "size_bytes": 806
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/example_models.yaml",
+      "sha256": "6011f6730ff82b6a45d3d595658e4932df115e2ce65247b8f4359597bf20d195",
+      "size_bytes": 2087
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/knee_planner/app_gradio.py",
+      "sha256": "6f127c4226476cf64d2a7c140d5ea6181d4c4fc40f5aef91ffd40f6f6890449f",
+      "size_bytes": 11027
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/knee_planner/meniscus_inference.py",
+      "sha256": "a8b0a405fde343dc6eeda781526d5cdb37faceb14e0ec5c14b976f66050df3bc",
+      "size_bytes": 11532
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/knee_planner/segmenters.py",
+      "sha256": "c82a1837e26f30d88c08c0cf0da96d26c6866873261f34251766112b9a91fa27",
+      "size_bytes": 2218
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/knee_planner/render.py",
+      "sha256": "9073b5c9ff9475fa7e9e6c5852864641bc2c04bf848258bd84fe43d85b6f5a9f",
+      "size_bytes": 5926
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/knee_planner/horns.py",
+      "sha256": "d3f0d42aa8fc9002abed8d37da00b6ff578f653f1f9927801faada78ffc35b43",
+      "size_bytes": 3791
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/knee_planner/report.py",
+      "sha256": "774de9b4f411df83a3793ac82bf00493bb47e2e937ea0050ef4d070b8f57b614",
+      "size_bytes": 5051
+    }
+  ],
+  "generated_at": "2026-03-12T18:13:41",
+  "meniscus_size_model": {
+    "checkpoint_count": 100,
+    "checkpoints": [
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2026/fold01/best.pt",
+        "sha256": "2647718e5c6b4702dd6ea10d6003a27cb936dac56bec42f88c9a2284c05654ec",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2026/fold02/best.pt",
+        "sha256": "0482953fb8f721c2b1e7477ce5deb29a49601adf553ea2582fb146c3b5428438",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2026/fold03/best.pt",
+        "sha256": "2e0041a2bafc793b7ca867891827b1520042b7917c393dcec8e8a740ca23f06d",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2026/fold04/best.pt",
+        "sha256": "d86808f186bb7e55951595a94b15d6b737016a4728fe5899fdb4b1f07faaa1b9",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2026/fold05/best.pt",
+        "sha256": "10635e8f2ba2c167bbb8a73c61fa37c9eac67989f300382fd0b473a3c1136f40",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2027/fold01/best.pt",
+        "sha256": "429d3ad0b476d4262a70263e3552d12536a634297c3a6be8b77bb68144d3a974",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2027/fold02/best.pt",
+        "sha256": "1ccd739415162868e5fb2661d37da35bb5a3306ba360ecf78009daeb52fc86a7",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2027/fold03/best.pt",
+        "sha256": "29d0220474336b19c0052efb29b91c34d14d6faf9ba295d174107bd9e8d52ab4",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2027/fold04/best.pt",
+        "sha256": "0e005b1a828177af0ac903a0ae3c507a7fd772ed574a302c47c7470cf8bd3ffc",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2027/fold05/best.pt",
+        "sha256": "3fea3a0b97f2cff5177ade78eb521c2a5cb5c3176daabf9d91d040bb7457c2fa",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2028/fold01/best.pt",
+        "sha256": "ddf201654c9e0f985f1aef3f04c2e822deabdb0db4c76378330125c5b649d715",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2028/fold02/best.pt",
+        "sha256": "91c4617d78205f4c521daee74eb4efbd18fc3bb5d1f07f12da069748f6c9d98e",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2028/fold03/best.pt",
+        "sha256": "1bfb2ae6177ae9a93f1570b04e9a3333f7c1e4807d6dd2b9eadcded6d2b81ddb",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2028/fold04/best.pt",
+        "sha256": "217bc4d391d0695618213739f35b57fdaeb89fd24eda569664676d3c5418ed4b",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2028/fold05/best.pt",
+        "sha256": "1af99f03444518d0d4eebff6bc3ea25fe5343e2d36efd7b31cb810c49ef3e209",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2029/fold01/best.pt",
+        "sha256": "580e3c1ad37d452e1df11890bcd45e2f0fb2c64afa21ca8c46834384be945e83",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2029/fold02/best.pt",
+        "sha256": "c067acca5657f329de40787d72f4d74e5ced79eec60f8bcf996408e35e657eef",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2029/fold03/best.pt",
+        "sha256": "b547e0d66c106d29b3122914edd32adec453d99ea5e3bcf85549cfe7b7ef2436",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2029/fold04/best.pt",
+        "sha256": "2f6d40a85e43c2a24b0e1c9f43a39bc496ad70d4ec292c771cc699813ccaa00a",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2029/fold05/best.pt",
+        "sha256": "1a17c33f0f4d4889d0720e3ebc1c1745f5bd51ef9be6c76d9073f107a7922ef0",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2030/fold01/best.pt",
+        "sha256": "2aa554e684fa1a3d72bd6e3c553e695196b24b65214897150f4a49d7ca347f54",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2030/fold02/best.pt",
+        "sha256": "4b19ff60108f142be6e0e5d0c03d44cb3f63dbe1e9bbaaa3bd4b4a8cf153ff3b",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2030/fold03/best.pt",
+        "sha256": "0f4a4f39e2d53517188c5356c54897992dd7238909dbe5d8c363b6ff83d0abeb",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2030/fold04/best.pt",
+        "sha256": "406c46bd3d6ee6f22522fc17f3098bfb8e262ba18dd8d59924854454c73566ec",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_length/folds/seed2030/fold05/best.pt",
+        "sha256": "ebc0ff55e0fe5a99263d289a35c0f23dba1622144005d06f2a899226e35c1a74",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2026/fold01/best.pt",
+        "sha256": "c2df5ff57b80a68f51b86ebb580472c0cdff7a0785dc4de4fd512f9d410772a2",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2026/fold02/best.pt",
+        "sha256": "fdb7c382368d87d259cfd077f744c46481e949eb26f66dd94a14e0511f592e5d",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2026/fold03/best.pt",
+        "sha256": "6249eeca5ca3a29891f4c79db3b10027276530c3ce39a2196671faff9393c4fd",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2026/fold04/best.pt",
+        "sha256": "fc6eed1ab44471c9e6f5db3dde58c095e603eb9496d7ef363357ec7ff5da3a47",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2026/fold05/best.pt",
+        "sha256": "87ee16b22b60798924266c9945467d049e8b3b5ac5b9953d9b127ae8363257a3",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2027/fold01/best.pt",
+        "sha256": "bef092ff959f7b8172315ac3855f574b493d64b42f14406bfb147523952cebf2",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2027/fold02/best.pt",
+        "sha256": "1a77ff29aa95c1a452353b299deb119fb6e014f2838d783e53ad60a6c65fe592",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2027/fold03/best.pt",
+        "sha256": "1d0b35692ea1f6502ed71d87577fc0e9bafeb0af036618e707c1ba92ca881c84",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2027/fold04/best.pt",
+        "sha256": "9cd2c8300c8daaac7fd834ad4b2b88c826a41cf38a2f30075a1dab41889bb2be",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2027/fold05/best.pt",
+        "sha256": "ded2679ecd329299ee8f42f4918b257526b52fb722822c6a78b91de1f9e1a0ad",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2028/fold01/best.pt",
+        "sha256": "70b6085e49ff16c8dce66b09d42b1ff7b8e557f4b7ca1c0f11c0424fda46147b",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2028/fold02/best.pt",
+        "sha256": "a435415563bd0bf3b152e24b4bff6b3d1141b5379f1a1039ee0caa7f1104bded",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2028/fold03/best.pt",
+        "sha256": "ce3de1f79a6befbfd353e80649c8038b74478ea5fca0b1ee6f055124847817b5",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2028/fold04/best.pt",
+        "sha256": "13c880057ae8153803ef43f0785952170d65d7ded0dd6c23c0eb6c42e9489a02",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2028/fold05/best.pt",
+        "sha256": "d0c58955976990a7d7fecce0727a26a61f04f28362fc340c0994617c598f8c65",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2029/fold01/best.pt",
+        "sha256": "eb01696b4ff87ff39000308b7a6694355f677f6020290b98b09db8a674cdf037",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2029/fold02/best.pt",
+        "sha256": "fa7d387f2da94272dfa6e2a3634e14d052694413f3cc60c4cc46a172481e2cf2",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2029/fold03/best.pt",
+        "sha256": "f45302cfec9a1b221062841284036369c82d068af7c6b5aee18aa4ca14b64717",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2029/fold04/best.pt",
+        "sha256": "9cce6b079e4fb52afc078019ca3dca8f740dcbd04492bb58f9b18cdfb49de032",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2029/fold05/best.pt",
+        "sha256": "a3c120cae7659659d0a315ef8e0dfccede7977ffebe0ef8b860aed9993980c9a",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2030/fold01/best.pt",
+        "sha256": "5cbb0e75abac052d48f5f2ba8f69eef6eb90141e832a1d70eb5b5dfa13986f17",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2030/fold02/best.pt",
+        "sha256": "eaf4566b17a35ce537513fedb19496aa802b7d2b8bf242a9ae1c8eb77af137e7",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2030/fold03/best.pt",
+        "sha256": "69e8127e616d27a47a6bcbbdd8c280bbf14ff08fae215c4f235163dbf2e31820",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2030/fold04/best.pt",
+        "sha256": "61c4cb44348d0e30c508d16edc96b1f8a3060ef6dfd633abfba737c6fd56a418",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/lateral_width/folds/seed2030/fold05/best.pt",
+        "sha256": "167d68e934149d65100b472935eccb9cde153f9d15b67294c6ba5a241e343de7",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2026/fold01/best.pt",
+        "sha256": "11517069037041f6c1cb02fc2b11c25e280578e6f2313f10859994ad1f03ecb4",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2026/fold02/best.pt",
+        "sha256": "5ff5daff0df4f8102e38c4664be4327d7dd961f682301d1492337a90d6f37705",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2026/fold03/best.pt",
+        "sha256": "fe49742eb403ef830edbaf6ffaa14ad8ed95edde14a2b4d71e4a235e00b537c4",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2026/fold04/best.pt",
+        "sha256": "9984a7d68bd3bdd221824546d2bdb0650d519c4057f78b1d5476488afceccb39",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2026/fold05/best.pt",
+        "sha256": "ec4b77b3aaac435bc76fc19064d1d32cdefdd90662f6b17d06cb3b937669eda6",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2027/fold01/best.pt",
+        "sha256": "6c4487a0d413847dcf566a86b211dcec7c9eba06e6c047e7d50b80f8c9e71462",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2027/fold02/best.pt",
+        "sha256": "fb072702f04880a1f593fa013034405f11c2303e9a5dbdcdd21328caa0d986bb",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2027/fold03/best.pt",
+        "sha256": "1d72ade9e2904469f95847856b19e6ce26af5dce3a74ab29c84ad792ad8344ef",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2027/fold04/best.pt",
+        "sha256": "7bfd48c35d4c56b25724e60bf183a37e11281486e518a469b284bc9f070d8e3d",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2027/fold05/best.pt",
+        "sha256": "cc982f9aa7e1032774cfd3b84c88cbb707828c97ed3366df5a70c14d1a3951c4",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2028/fold01/best.pt",
+        "sha256": "aa709718c7cfc1592b1485c9d3fab3f1ddfc510f8d0b14d2b18e1384095e9ef9",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2028/fold02/best.pt",
+        "sha256": "250f620a4a49df21ffe63725f6819a2104523172a60a7ecc34c79f95be814fc8",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2028/fold03/best.pt",
+        "sha256": "6fa24dde19fab092ffbbba559adf96e8e2942b65403d271bb1e447af9c9fc6e7",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2028/fold04/best.pt",
+        "sha256": "cd110e2e4bbcbce8d5f7252ec2dbec75386233b518b6cd787479168d32d44af7",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2028/fold05/best.pt",
+        "sha256": "0092ce763c0834b86b10ac86dc909e6071d2e3401711b920f2bc449bf1a96bde",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2029/fold01/best.pt",
+        "sha256": "d826ca58e54cecb4bf5155babc7af67ef305d9b244004045ed7a81a43912bee1",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2029/fold02/best.pt",
+        "sha256": "b23d91ad7a35b44eaabd5a27be87f20f7a8d4c6c5c829ef5617680d477b647c5",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2029/fold03/best.pt",
+        "sha256": "6fdc756ad29e497a63e43c69b6f0969a85fc9469dafb93285effb704ac496952",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2029/fold04/best.pt",
+        "sha256": "237568c4974775ab6344a7fe07d7288526e77ba20229b512b17f7d88c1861f39",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2029/fold05/best.pt",
+        "sha256": "3bf7c34cb80abca42da799ef6361abdbdfb82ef09e2f5676474a254495fa6128",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2030/fold01/best.pt",
+        "sha256": "7b2abd34d9f5954ae2cb17876b61df541108d66fbd532380832439c0bb70d522",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2030/fold02/best.pt",
+        "sha256": "07ede2b51838f14c28c373911f353b398698970034265a1c81799e629f770ffd",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2030/fold03/best.pt",
+        "sha256": "dbec9ae0e648c997c83afba306310c310c37ec82656a2985422daaa6077c8248",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2030/fold04/best.pt",
+        "sha256": "a9abe9c59e2c9b68cded2ac2659b18505988c63495483c9f5a67896953542860",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_length/folds/seed2030/fold05/best.pt",
+        "sha256": "1dafda42667185cb0fdbded2f94f691e23bf90fbc0b764f77183873f7dad4fae",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2026/fold01/best.pt",
+        "sha256": "af3ecdeb373dacdb530aa565040fb96e684706dd38b6a5811447244d9d0e061c",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2026/fold02/best.pt",
+        "sha256": "e5b9479252b480c84ec5a15112010e45fbf31cd7ec5b97e3e08fc37293ded4cd",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2026/fold03/best.pt",
+        "sha256": "d9b821c6eda114c9431a60e623bd9c08715f4daf65c7c646c851ee1bfacdc513",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2026/fold04/best.pt",
+        "sha256": "dbc0ab8b4efcab9f8ab14c22e5ed15272fc23defc88df8107ac92f780384dbbf",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2026/fold05/best.pt",
+        "sha256": "15c4d36acf3ee63fe31a4572686d81321d53c928331ce77012dfcb3bc917c213",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2027/fold01/best.pt",
+        "sha256": "d01678c217dfc3d8f127340865ba8098cb05b8db89a56f637abbeb49fce742a1",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2027/fold02/best.pt",
+        "sha256": "de42ccc683e2f078ca1c9cb3a0248118d144239851ee5becfcf499cff0c9ddbf",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2027/fold03/best.pt",
+        "sha256": "105bdc80633c453a3c0370269a52e56ac0b58283e4a141f2a9de4bf24658e6cd",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2027/fold04/best.pt",
+        "sha256": "954a007f0a45356cc035ad7f9db9489669ac37190f3b20f05a9894d5a63fc649",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2027/fold05/best.pt",
+        "sha256": "546a8bae8616705f81ebd73d10ea5710fe2080e615a9b39bed4f55e6da3f7b45",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2028/fold01/best.pt",
+        "sha256": "3ae65d892fb9bb75b0d2f878d741dc79cdaa4dc9cb1bf733ebc44ea3b8bb7629",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2028/fold02/best.pt",
+        "sha256": "0b1495d7af07f700a547d458fd74a98ff875c549917a9ebe5da01d33d4707dfd",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2028/fold03/best.pt",
+        "sha256": "c7603c3e2a8f061249f9f2795f7bcf479ace046da681b5f18801494c9730fcf4",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2028/fold04/best.pt",
+        "sha256": "b216b72f69eccc24b555fff7a18e31ca722d7602edec06d922f79e9babed9e39",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2028/fold05/best.pt",
+        "sha256": "4a3bbe5732f37cccdb5a05fa231be8ab22ccc99af73188f37c270b174828d255",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2029/fold01/best.pt",
+        "sha256": "127de55125a48657b4a106a0b67432196a26acde02dc65267f93d589c8062f4c",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2029/fold02/best.pt",
+        "sha256": "387c4fc359bed75911731ab5d3ab61f5497b85cb0cd2bfbb6c3062bc3e4ebdde",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2029/fold03/best.pt",
+        "sha256": "d5f2cfe9bee261baa4a12806793b7b9d8affe99799d999f092943c04385e1306",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2029/fold04/best.pt",
+        "sha256": "4c0aa0b89c2da4bf74c65dca73123b69c4eb1c4ed49aeb9a0a5620a850d140b2",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2029/fold05/best.pt",
+        "sha256": "fcff508ff94b004f93d8b0d6b55bf67a5b7e1eec9c04fb5b884601178f0260f4",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2030/fold01/best.pt",
+        "sha256": "c8a80bd213145d7770153a869f7e7ab108d466c8c386ff439b5f0cdb78bfb742",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2030/fold02/best.pt",
+        "sha256": "a6637f3f632de4cba5c0aa835401e10ec302f5c9b2d81cc79f73519d20532ae2",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2030/fold03/best.pt",
+        "sha256": "25495d02e023fd5b487eb808607b9861f72f360cac436917a8e660f9195c357a",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2030/fold04/best.pt",
+        "sha256": "5c951c8d7c021a8386a338cb273dc6d336cd45b9ef2d83e9e98f265b8d5f56cc",
+        "size_bytes": 34029849
+      },
+      {
+        "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/medial_width/folds/seed2030/fold05/best.pt",
+        "sha256": "0bea673619aff2873584a17f36bb561c02d184458f8e5dc13ab5b13b6adde8d0",
+        "size_bytes": 34029849
+      }
+    ],
+    "contract": {
+      "exists": true,
+      "kind": "file",
+      "path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625/target_contract.json",
+      "sha256": "012e6b5ba350c1945ced0fec76274c8ad46a53eea3e3d733c6a4cef70cfac7d7",
+      "size_bytes": 2854
+    },
+    "root": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/Verda_Results/bone_lenwid_v2_guarded_20260309_004625"
+  },
+  "segmentation_model_registry": {
+    "models": [
+      {
+        "artifact": {
+          "exists": false
+        },
+        "backend": "python_callable",
+        "backend_kwargs": {
+          "callable": "knee_planner.segmenters:simple_otsu_knee_bone_segment"
+        },
+        "checkpoint_name": null,
+        "description": "Research-only fallback segmentation (no external model weights required)",
+        "id": "prototype_simple_otsu_femur_tibia",
+        "label_map": {
+          "1": "femur",
+          "2": "tibia"
+        },
+        "model_path": null,
+        "priority": 1000
+      },
+      {
+        "artifact": {
+          "exists": false,
+          "path": "/absolute/path/to/oai_dess_sag_model/nnUNetTrainer__nnUNetPlans__3d_fullres"
+        },
+        "backend": "nnunetv2",
+        "backend_kwargs": {
+          "num_processes_preprocessing": 2,
+          "num_processes_segmentation_export": 2,
+          "perform_everything_on_device": true,
+          "tile_step_size": 0.5,
+          "use_gaussian": true,
+          "use_mirroring": true
+        },
+        "checkpoint_name": "checkpoint_final.pth",
+        "description": "OAI-like sagittal 3D DESS model",
+        "id": "oai_dess_sag_nnunet",
+        "label_map": {
+          "1": "femur",
+          "2": "tibia"
+        },
+        "model_path": "/absolute/path/to/oai_dess_sag_model/nnUNetTrainer__nnUNetPlans__3d_fullres",
+        "priority": 100
+      },
+      {
+        "artifact": {
+          "exists": false,
+          "path": "/absolute/path/to/sag_pd_model/nnUNetTrainer__nnUNetPlans__3d_fullres"
+        },
+        "backend": "nnunetv2",
+        "backend_kwargs": {},
+        "checkpoint_name": "checkpoint_final.pth",
+        "description": "Sagittal PD / PD-FS fallback model",
+        "id": "sagittal_pd_generic_nnunet",
+        "label_map": {
+          "1": "femur",
+          "2": "tibia"
+        },
+        "model_path": "/absolute/path/to/sag_pd_model/nnUNetTrainer__nnUNetPlans__3d_fullres",
+        "priority": 80
+      },
+      {
+        "artifact": {
+          "exists": false
+        },
+        "backend": "subprocess",
+        "backend_kwargs": {
+          "command_template": "external_coronal_segmenter --input {input} --output {output}"
+        },
+        "checkpoint_name": null,
+        "description": "Example wrapper for an external coronal-knee segmenter",
+        "id": "coronal_3d_generic_subprocess",
+        "label_map": {
+          "1": "femur",
+          "2": "tibia"
+        },
+        "model_path": null,
+        "priority": 70
+      }
+    ],
+    "yaml_path": "/Users/abhichatterjee/Documents/Meniscus_project_noOA/prototype/knee_mri_planner/example_models.yaml",
+    "yaml_sha256": "6011f6730ff82b6a45d3d595658e4932df115e2ce65247b8f4359597bf20d195"
+  }
+}
