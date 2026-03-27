@@ -1,22 +1,24 @@
-/* Inspired by mat-planner.org reference: Squarespace medical practice layout
-   (e.g. https://www.michaelfumd.com/) — charcoal text, blue links, serif titles,
-   Proxima-style sans via Montserrat, Garamond-style display via Cormorant Garamond. */
+/* MAT Planner — aligned with desktop app: deep navy base, electric cyan accents, white type. */
 
 :root {
-  --text: #272727;
-  --text-soft: #3e3e3e;
-  --muted: #666666;
-  --link: #2c679b;
-  --link-hover: #23527b;
-  --bg: #ffffff;
-  --bg-soft: #f6f6f6;
-  --border: #dddddd;
-  --border-dark: #cccccc;
-  --btn-dark: #272727;
-  --btn-dark-hover: #131313;
+  --bg: #0b1321;
+  --bg-elevated: #101820;
+  --bg-soft: #151f2e;
+  --bg-softer: #1a2638;
+  --text: #ffffff;
+  --text-soft: rgba(255, 255, 255, 0.88);
+  --muted: rgba(255, 255, 255, 0.62);
+  --accent: #4dccff;
+  --accent-bright: #00d2ff;
+  --accent-glow: rgba(77, 204, 255, 0.45);
+  --accent-muted: rgba(77, 204, 255, 0.14);
+  --link: #4dccff;
+  --link-hover: #7fe4ff;
+  --border: rgba(77, 204, 255, 0.22);
+  --border-subtle: rgba(255, 255, 255, 0.08);
   --radius: 2px;
   --font-sans: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-display: "Montserrat", var(--font-sans);
   --max: 960px;
   --header-h: 72px;
 }
@@ -37,6 +39,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
@@ -46,6 +49,9 @@ body {
   line-height: 1.65;
   color: var(--text-soft);
   background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 100% 80% at 50% -30%, rgba(77, 204, 255, 0.12), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(0, 210, 255, 0.04), transparent);
   min-height: 100vh;
 }
 
@@ -63,9 +69,9 @@ a:hover {
   left: 16px;
   z-index: 200;
   padding: 10px 16px;
-  background: var(--btn-dark);
-  color: #fff;
-  font-weight: 600;
+  background: var(--accent);
+  color: #0b1321;
+  font-weight: 700;
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
@@ -77,18 +83,19 @@ a:hover {
   top: 16px;
 }
 
-/* —— Header (full-width bar, inner content) —— */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  background: rgba(11, 19, 33, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 1px 0 rgba(77, 204, 255, 0.06);
 }
 
 .site-header.is-scrolled {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border-bottom-color: var(--border);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
 .header-inner {
@@ -103,18 +110,24 @@ a:hover {
 }
 
 .brand {
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--text);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  line-height: 1.1;
+  line-height: 0;
   flex-shrink: 0;
 }
 
-.brand:hover {
-  color: var(--link);
+.brand:hover .brand-logo {
+  filter: drop-shadow(0 0 12px var(--accent-glow));
+}
+
+.brand-logo {
+  height: 44px;
+  width: auto;
+  max-width: min(200px, 42vw);
+  object-fit: contain;
+  object-position: left center;
+  display: block;
 }
 
 .nav-toggle {
@@ -127,7 +140,7 @@ a:hover {
   padding: 10px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg);
+  background: var(--bg-soft);
   cursor: pointer;
 }
 
@@ -163,7 +176,7 @@ a:hover {
 }
 
 .nav-link {
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
@@ -174,11 +187,10 @@ a:hover {
 }
 
 .nav-link:hover {
-  color: var(--link);
+  color: var(--accent);
   background: transparent;
 }
 
-/* Dropdown (Resources) — Squarespace-style flyout */
 .nav-dropdown {
   position: relative;
 }
@@ -186,7 +198,7 @@ a:hover {
 .nav-dropdown-summary {
   list-style: none;
   cursor: pointer;
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.85);
   font-family: var(--font-sans);
   font-size: 12px;
   font-weight: 600;
@@ -214,11 +226,11 @@ a:hover {
 }
 
 .nav-dropdown[open] .nav-dropdown-summary {
-  color: var(--link);
+  color: var(--accent);
 }
 
 .nav-dropdown-summary:hover {
-  color: var(--link);
+  color: var(--accent);
 }
 
 .nav-dropdown-panel {
@@ -228,9 +240,9 @@ a:hover {
   min-width: 220px;
   padding: 8px 0;
   margin-top: 4px;
-  background: var(--bg);
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(77, 204, 255, 0.08);
   z-index: 120;
 }
 
@@ -246,15 +258,14 @@ a:hover {
 }
 
 .nav-dropdown-panel a:hover {
-  color: var(--link);
-  background: var(--bg-soft);
+  color: var(--accent);
+  background: var(--accent-muted);
 }
 
 .nav-cta {
   margin-left: 8px;
 }
 
-/* —— Buttons —— */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -263,42 +274,44 @@ a:hover {
   padding: 14px 28px;
   font-family: var(--font-sans);
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   text-decoration: none;
   border-radius: var(--radius);
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--link);
-  outline-offset: 2px;
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 3px;
 }
 
 .btn-primary {
-  background: var(--btn-dark);
-  color: #fff;
-  border-color: var(--btn-dark);
+  background: linear-gradient(180deg, var(--accent-bright) 0%, #3ab8e0 100%);
+  color: #0b1321;
+  border-color: rgba(77, 204, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.25);
 }
 
 .btn-primary:hover {
-  background: var(--btn-dark-hover);
-  border-color: var(--btn-dark-hover);
-  color: #fff;
+  background: linear-gradient(180deg, #7fe4ff 0%, var(--accent) 100%);
+  color: #0b1321;
+  box-shadow: 0 0 28px var(--accent-glow);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--btn-dark);
-  border-color: var(--btn-dark);
+  color: var(--text);
+  border-color: var(--accent);
 }
 
 .btn-outline:hover {
-  background: var(--bg-soft);
-  color: var(--btn-dark);
+  background: var(--accent-muted);
+  color: var(--accent-bright);
+  border-color: var(--accent-bright);
 }
 
 .btn-inline {
@@ -306,7 +319,6 @@ a:hover {
   margin-top: 0.25rem;
 }
 
-/* —— Main content —— */
 .content-wrap {
   max-width: var(--max);
   margin: 0 auto;
@@ -320,14 +332,18 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero h1 {
-  font-family: var(--font-display);
-  font-size: clamp(2.25rem, 5vw, 3.25rem);
-  font-weight: 600;
-  line-height: 1.15;
-  color: var(--text);
-  margin: 0 0 16px;
-  letter-spacing: 0.01em;
+.hero-title {
+  margin: 0 0 20px;
+  line-height: 0;
+}
+
+.hero-logo {
+  max-width: min(100%, 400px);
+  height: auto;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 24px rgba(0, 210, 255, 0.2));
 }
 
 .hero-tagline {
@@ -347,8 +363,9 @@ a:hover {
 
 .section-rule {
   border: none;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-subtle);
   margin: 40px 0;
+  box-shadow: 0 1px 0 rgba(77, 204, 255, 0.06);
 }
 
 .section {
@@ -363,7 +380,7 @@ a:hover {
 .section-head h2 {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text);
   margin: 0 0 8px;
   letter-spacing: 0.02em;
@@ -382,7 +399,7 @@ a:hover {
 }
 
 .download-card {
-  background: var(--bg);
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
@@ -393,19 +410,20 @@ a:hover {
 }
 
 .download-card:hover {
-  border-color: var(--border-dark);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-color: rgba(77, 204, 255, 0.45);
+  box-shadow: 0 0 24px rgba(0, 210, 255, 0.08);
 }
 
 .download-card.featured {
-  border-color: #c5c5c5;
-  background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
+  border-color: rgba(77, 204, 255, 0.5);
+  background: linear-gradient(165deg, var(--bg-softer) 0%, var(--bg-elevated) 100%);
+  box-shadow: 0 0 32px rgba(77, 204, 255, 0.1);
 }
 
 .download-card h3 {
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--text);
   margin: 0;
 }
@@ -426,8 +444,8 @@ a:hover {
   letter-spacing: 0.12em;
   padding: 5px 10px;
   border-radius: var(--radius);
-  background: var(--bg-soft);
-  color: var(--text-soft);
+  background: var(--accent-muted);
+  color: var(--accent-bright);
   border: 1px solid var(--border);
   width: fit-content;
 }
@@ -451,7 +469,7 @@ a:hover {
   counter-increment: step;
   position: relative;
   background: var(--bg-soft);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius);
   padding: 14px 14px 14px 48px;
   font-size: 14px;
@@ -468,24 +486,25 @@ a:hover {
   font-family: var(--font-sans);
   font-size: 11px;
   font-weight: 700;
-  color: #fff;
-  background: var(--link);
+  color: #0b1321;
+  background: var(--accent);
   border-radius: var(--radius);
   display: grid;
   place-items: center;
+  box-shadow: 0 0 12px rgba(77, 204, 255, 0.35);
 }
 
 .launch-block {
   background: var(--bg-soft);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius);
   padding: 24px;
 }
 
 .launch-block h3 {
   font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--text);
   margin: 0 0 10px;
 }
@@ -513,10 +532,10 @@ a:hover {
   font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
   font-size: 13px;
   line-height: 1.55;
-  background: #1d1d1d;
-  color: #e8e8e8;
+  background: #070b12;
+  color: #e8f4ff;
   border-radius: var(--radius);
-  border: 1px solid #333;
+  border: 1px solid var(--border);
   padding: 14px 72px 14px 14px;
   overflow-x: auto;
   white-space: pre-wrap;
@@ -533,37 +552,38 @@ a:hover {
   font-family: var(--font-sans);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #aaa;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--muted);
+  background: rgba(77, 204, 255, 0.08);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   cursor: pointer;
 }
 
 .copy-btn:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--accent-bright);
+  background: rgba(77, 204, 255, 0.15);
 }
 
 .copy-btn:focus-visible {
-  outline: 2px solid var(--link);
+  outline: 2px solid var(--accent-bright);
   outline-offset: 2px;
 }
 
 .copy-btn.copied {
-  color: #8fd4a8;
-  border-color: rgba(143, 212, 168, 0.4);
+  color: var(--accent-bright);
+  border-color: rgba(77, 204, 255, 0.55);
 }
 
 .notice {
   margin-top: 40px;
   padding: 18px 22px;
   background: var(--bg-soft);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--link);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   font-size: 14px;
   color: var(--text-soft);
+  box-shadow: 0 0 20px rgba(77, 204, 255, 0.06);
 }
 
 .notice strong {
@@ -578,8 +598,8 @@ a:hover {
 }
 
 .site-footer {
-  background: var(--bg-soft);
-  border-top: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border-subtle);
   padding: 28px 24px 36px;
   font-size: 13px;
   color: var(--muted);
@@ -597,9 +617,13 @@ a:hover {
 
 .site-footer a {
   font-weight: 600;
+  color: var(--accent);
 }
 
-/* —— Mobile —— */
+.site-footer a:hover {
+  color: var(--accent-bright);
+}
+
 @media (max-width: 900px) {
   .nav-toggle {
     display: flex;
@@ -614,9 +638,9 @@ a:hover {
     flex-direction: column;
     align-items: stretch;
     padding: 12px 24px 20px;
-    background: var(--bg);
+    background: var(--bg-elevated);
     border-bottom: 1px solid var(--border);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
   }
 
   .site-header.is-open .nav-actions {
@@ -625,11 +649,11 @@ a:hover {
 
   .nav-link {
     padding: 12px 0;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border-subtle);
   }
 
   .nav-dropdown {
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border-subtle);
   }
 
   .nav-dropdown-summary {
@@ -643,6 +667,7 @@ a:hover {
     box-shadow: none;
     padding: 0 0 8px 12px;
     margin-top: 0;
+    background: transparent;
   }
 
   .nav-cta {
