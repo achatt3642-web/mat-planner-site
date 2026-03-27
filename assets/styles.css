@@ -121,13 +121,13 @@ a:hover {
   filter: drop-shadow(0 0 12px var(--accent-glow));
 }
 
+/* Intrinsic file size is 1024×1024; attributes preserve aspect ratio; display size is small in header. */
 .brand-logo {
-  height: 44px;
-  width: auto;
-  max-width: min(200px, 42vw);
+  display: block;
+  width: 48px;
+  height: auto;
   object-fit: contain;
   object-position: left center;
-  display: block;
 }
 
 .nav-toggle {
@@ -332,18 +332,14 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero-title {
-  margin: 0 0 20px;
-  line-height: 0;
-}
-
-.hero-logo {
-  max-width: min(100%, 400px);
-  height: auto;
-  width: auto;
-  display: inline-block;
-  vertical-align: middle;
-  filter: drop-shadow(0 0 24px rgba(0, 210, 255, 0.2));
+#hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text);
+  margin: 0 0 16px;
+  letter-spacing: 0.02em;
 }
 
 .hero-tagline {
@@ -448,50 +444,6 @@ a:hover {
   color: var(--accent-bright);
   border: 1px solid var(--border);
   width: fit-content;
-}
-
-.steps {
-  display: grid;
-  gap: 10px;
-  counter-reset: step;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  .steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.step {
-  counter-increment: step;
-  position: relative;
-  background: var(--bg-soft);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius);
-  padding: 14px 14px 14px 48px;
-  font-size: 14px;
-  color: var(--text-soft);
-}
-
-.step::before {
-  content: counter(step);
-  position: absolute;
-  left: 14px;
-  top: 14px;
-  width: 24px;
-  height: 24px;
-  font-family: var(--font-sans);
-  font-size: 11px;
-  font-weight: 700;
-  color: #0b1321;
-  background: var(--accent);
-  border-radius: var(--radius);
-  display: grid;
-  place-items: center;
-  box-shadow: 0 0 12px rgba(77, 204, 255, 0.35);
 }
 
 .launch-block {

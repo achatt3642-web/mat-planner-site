@@ -17,7 +17,7 @@
   <header class="site-header" id="site-header">
     <div class="header-inner">
       <a class="brand" href="#" aria-label="MAT Planner home">
-        <img class="brand-logo" src="assets/mat-planner-logo.png" width="200" height="60" alt="MAT Planner" decoding="async" />
+        <img class="brand-logo" src="assets/mat-planner-logo.png" width="1024" height="1024" alt="MAT Planner" decoding="async" />
       </a>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
@@ -26,7 +26,6 @@
       </button>
       <nav id="primary-nav" class="nav-actions" aria-label="Primary">
         <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#workflow">Workflow</a>
         <a class="nav-link" href="#launch">Launch</a>
         <details class="nav-dropdown">
           <summary class="nav-dropdown-summary">Resources</summary>
@@ -43,9 +42,7 @@
   <main id="main">
     <div class="content-wrap">
       <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title" class="hero-title">
-          <img class="hero-logo" src="assets/mat-planner-logo.png" width="480" height="144" alt="MAT Planner" decoding="async" />
-        </h1>
+        <h1 id="hero-title">MAT Planner</h1>
         <p class="hero-tagline">
           Research desktop software for meniscal allograft planning from knee MRI — graft editing, tunnel and trough targets, and local reporting.
         </p>
@@ -75,24 +72,6 @@
             <a class="btn btn-outline btn-inline" href="downloads/model_registry.json" download>Download .json</a>
           </article>
         </div>
-      </section>
-
-      <hr class="section-rule" aria-hidden="true" />
-
-      <section id="workflow" class="section" aria-labelledby="workflow-title">
-        <div class="section-head">
-          <h2 id="workflow-title">Workflow</h2>
-          <p>From DICOM or NIfTI through export.</p>
-        </div>
-        <ol class="steps">
-          <li class="step">Upload knee MRI: DICOM series folder or NIfTI volume.</li>
-          <li class="step">Generate femur and tibia bone masks.</li>
-          <li class="step">Run 3D CNN meniscus sizing (medial and lateral width and length).</li>
-          <li class="step">Estimate horn coordinates and visualize the predicted graft.</li>
-          <li class="step">Use the graft tab for Exact, Overlay, and Edited views; adjust AP, ML, and SI.</li>
-          <li class="step">Review tibial contact surface area and tunnel or trough planning targets.</li>
-          <li class="step">Export a PDF report and JSON summary.</li>
-        </ol>
       </section>
 
       <hr class="section-rule" aria-hidden="true" />
