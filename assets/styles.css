@@ -105,8 +105,8 @@ a:hover {
   min-height: var(--header-h);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .brand {
@@ -121,13 +121,13 @@ a:hover {
   filter: drop-shadow(0 0 12px var(--accent-glow));
 }
 
-/* Intrinsic file size is 1024×1024; attributes preserve aspect ratio; display size is small in header. */
+/* Intrinsic 1024×1024; 40×40 box + object-fit keeps aspect ratio (square asset fills the box). */
 .brand-logo {
   display: block;
-  width: 48px;
-  height: auto;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  object-position: left center;
+  object-position: center;
 }
 
 .nav-toggle {
@@ -173,6 +173,8 @@ a:hover {
   flex-wrap: wrap;
   gap: 0.15rem 0.25rem;
   justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
 }
 
 .nav-link {
@@ -388,6 +390,67 @@ a:hover {
   color: var(--muted);
 }
 
+/* Patient-education style blocks (similar rhythm to specialty practice sites) */
+.edu-body {
+  max-width: 42rem;
+}
+
+.edu-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 1.75rem 0 0.65rem;
+  letter-spacing: 0.02em;
+}
+
+.edu-body h3:first-of-type {
+  margin-top: 0;
+}
+
+.edu-body p {
+  margin: 0 0 1rem;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.edu-body p:last-child {
+  margin-bottom: 0;
+}
+
+.edu-list {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.edu-list li {
+  margin: 0.45rem 0;
+}
+
+.edu-list li::marker {
+  color: var(--accent);
+}
+
+.edu-rule {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 1.75rem 0;
+}
+
+.edu-disclaimer {
+  margin-top: 1.75rem !important;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+  color: var(--muted) !important;
+  font-style: italic;
+}
+
 .download-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -579,6 +642,7 @@ a:hover {
 @media (max-width: 900px) {
   .nav-toggle {
     display: flex;
+    margin-left: auto;
   }
 
   .nav-actions {
